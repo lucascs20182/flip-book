@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Book</title>
+  
+    <style type="text/css">
+        #magazine {
+            width: 800px;
+            height: 533px;
+        }
+
+        #magazine .turn-page {
+            width: 400px;
+            height: 533px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flip book JQuery</h2>
+    <div id="magazine">
+        <div><img src="assets/test1.jpg" /></div>
+        <div><img src="assets/test2.jpg" /></div>
+        <div><img src="assets/test3.jpg" /></div>
+        <div><img src="assets/test4.jpg" /></div>
+    </div>
+
+    <script src="./modules/jquery.js"></script>
+    <script src="./modules/turn.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#magazine').turn();
+        });
+    </script>
+</body>
+
+</html>
